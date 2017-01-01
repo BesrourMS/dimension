@@ -11,7 +11,7 @@ Download the dimension folder, extract it to the themes folder of your Pico inst
 
 For the content download our `index.md`, upload it in the content folder and make your changes.
 
-##<a href="http://freehtml5.co/demos/dimension/">Demo</a>
+##<a href="https://html5up.net/uploads/demos/dimension/">Demo</a>
 
 ### Screenshot
 ![Dimension Screenshot](http://www.zupimages.net/up/17/52/07u9.jpg)
