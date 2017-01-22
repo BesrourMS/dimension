@@ -9,7 +9,7 @@ Download the dimension folder, extract it to the themes folder of your Pico inst
 
 `$config['theme'] = 'dimension';`
 
-For the content download our `index.md`, upload it in the content folder and make your changes.
+For the front page download our `index.md`, upload it in the content folder and make your changes.
 
 ##<a href="https://html5up.net/uploads/demos/dimension/">Demo</a>
 
