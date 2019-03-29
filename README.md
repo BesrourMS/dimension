@@ -5,9 +5,23 @@ This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pag
 
 ## Installation
 
-Download the dimension folder, extract it to the themes folder of your Pico installation, and change the following setting within your config.php:
+Download the dimension folder and extract it to the themes folder of your Pico installation.
 
-`$config['theme'] = 'dimension';`
+Update Pico CMS configuration to use dimension theme:
+
+* Pico CMS < 2.0 
+    
+    Change the following setting within your config.php:
+
+    `$config['theme'] = 'dimension';`
+
+* Pico CMS >= 2.0
+    
+     Add to config/config.yml
+
+    `theme: dimension`
+
+    (If the file does not excist, create it. For more info see config/config.yml.template)
 
 For the front page download our `index.md`, upload it in the content folder and make your changes.
 
