@@ -1,6 +1,6 @@
 ---
 Title: Intro
-Image: https://html5up.net/uploads/demos/dimension/images/pic01.jpg
+Image: https://source.unsplash.com/random/960x320
 Template: single
 Nav: 1
 ---

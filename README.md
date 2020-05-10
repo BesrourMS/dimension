@@ -21,7 +21,7 @@ Update Pico CMS configuration to use dimension theme:
 
     `theme: dimension`
 
-    (If the file does not excist, create it. For more info see config/config.yml.template)
+    (If the file does not exist, create it. For more info see config/config.yml.template)
 
 For the front page download our `index.md`, upload it in the content folder and make your changes.
 
