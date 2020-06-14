@@ -57,7 +57,7 @@
 {% for page in pages|sort_by([ 'meta', 'nav' ]) if page.meta.template == "single" and not page.hidden %}
 						<article id="{{ page.id }}">
 							<h2 class="major">{{ page.title }}</h2>
-							<span class="image main"><img src="{{ page.meta.image }}" alt="{{ page.title }}" /></span>
+						<span class="image main"><img src="{{ page.meta.image | url }}" alt="{{ page.title }}" /></span>
 							<p>{{ page.id|content }}</p>
 						</article>
 {% endfor %}
