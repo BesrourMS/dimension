@@ -64,7 +64,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="{{ meta.form }}">
+								<form method="post" {% if meta.form %} action="{{ meta.form|url }}" {% endif %} >
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -85,7 +85,7 @@
 								</form>
 								<ul class="icons">
 {% for icon, link in meta.social %}
-									<li><a href="{{ link }}" class="icon fa-{{ icon }}"><span class="label">{{ icon }}</span></a></li>
+									<li><a href="{{ link|url }}" class="icon fa-{{ icon }}"><span class="label">{{ icon }}</span></a></li>
 {% endfor %}
 								</ul>
 							</article>
