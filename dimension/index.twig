@@ -45,7 +45,7 @@
 						<nav>
 							<ul>
 {% for page in pages|sort_by([ 'meta', 'nav' ]) if page.meta.template == "single" and not page.hidden %}
-								<li><a href="#{{ page.id }}">{{ page.title }}</a></li>
+								<li><a href="#{{ page.id | replace({'/':'-'}) }}">{{ page.title }}</a></li>
 {% endfor %}
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -55,7 +55,7 @@
 				<!-- Main -->
 					<div id="main">
 {% for page in pages|sort_by([ 'meta', 'nav' ]) if page.meta.template == "single" and not page.hidden %}
-						<article id="{{ page.id }}">
+						<article id="{{ page.id | replace({'/':'-'}) }}">
 							<h2 class="major">{{ page.title }}</h2>
 						<span class="image main"><img src="{{ page.meta.image | url }}" alt="{{ page.title }}" /></span>
 							<p>{{ page.id|content }}</p>
