@@ -80,9 +80,9 @@
 
 					var $article = $main_articles.filter('#' + id);
 
-					// No such article? Bail.
+					// No such article? Show 404 page.
 						if ($article.length == 0)
-							return;
+							$article = main_articles.filter('404');
 
 					// Handle lock.
 
