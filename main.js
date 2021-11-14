@@ -80,9 +80,9 @@
 
 					var $article = $main_articles.filter('#' + id);
 
-					// No such article? Show 404 page.
+					// No such article? Bail.
 						if ($article.length == 0)
-							$article = main_articles.filter('404');
+							return;
 
 					// Handle lock.
 
@@ -364,7 +364,14 @@
 							// Show article.
 								$main._show(location.hash.substr(1));
 
-						}
+						} else {
+                             // Prevent default.
+								event.preventDefault();
+								event.stopPropagation();
+
+							// Show article.
+								$main._show('404');
+                        }
 
 				});
 
