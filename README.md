@@ -14,6 +14,12 @@ This is Dimension, a fun little one-pager with modal "pages" and a cool depth ef
 
 3) Configure your front page using `index.md`.  You can download our `content-sample/index.md`, to use as a template, or just create your own.  See [`content-sample/index.md`](https://github.com/BesrourMS/dimension/blob/master/content-sample/index.md?plain=1) for more information.
 
+### Upgrading Note
+
+Older versions of Dimension required you to set `Template: single` in your markdown files.  This is no longer required.
+
+If you're upgrading Dimension, however, you'll have to **remove that line from your markdown** or you'll see an "Unable to find template" error when visiting those pages individually.
+
 ## <a href="https://html5up.net/uploads/demos/dimension/">Demo</a>
 
 ### Screenshot
