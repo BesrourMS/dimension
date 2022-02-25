@@ -1,0 +1,14 @@
+api_version: 3                # Use Pico's latest API version for themes
+
+meta:                         # Register meta headers used by this theme
+  Icon: icon
+  Tagline: tagline
+  Image: image
+  Social: social
+  Nav: nav
+  Form: form
+
+twig_config:                  # Twig template engine config
+  autoescape: html            # Let Twig escape variables by default
+  strict_variables: false     # If set to true, Twig will bail out when unset variables are being used
+  charset: utf-8              # The charset used by Twig templates
